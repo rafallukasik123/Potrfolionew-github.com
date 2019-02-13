@@ -25,3 +25,27 @@ function sticky_menu() {
     navbar.classList.remove("sticky");
   }
 }
+
+const nav_button = document.querySelector('.nav_hamburger');
+const nav = document.querySelector('.js_nav');
+
+
+
+nav_button.addEventListener('click',function() 
+{
+  console.log(nav);
+  if(nav.classList.contains("nav_list")){
+    nav.classList.replace("nav_list","nav_list_mobile");
+
+    
+  }
+  else{
+    nav.classList.replace("nav_list_mobile","nav_list");
+  }
+  
+})
+
+
+
+
+

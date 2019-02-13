@@ -16,7 +16,7 @@
 <body>
   <header class="header">
     <div class="header_contain">
-      <p>Witaj jestem <span>Rafał Łukasik</span></p>
+      <p>Witaj jestem <span>Rafał Łukasik</span></p><br>
       <p>Chciałbym zostać frontend developerem</p>
 
       <button class='header_contain_button'>
@@ -27,13 +27,24 @@
   </header>
 
   <nav class="nav">
-    <ul>
-      <li class="nav--home"><a href="#">Home</a></li>
-      <li class="nav--about"><a href="#">About</a></li>
-      <li class="nav--news"><a href="#">Projects</a></li>
-      <li class="nav--contact"><a href="#">Contact</a></li>
+    <div class="nav_hamburger">
+        
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+      
+<!-- nav_list -->
+
+    <ul class="nav_list  js_nav">
+      <li class="nav_list--home"><a href="#">Home</a></li>
+      <li class="nav_list--about"><a href="#">About</a></li>
+      <li class="nav_list--news"><a href="#">Projects</a></li>
+      <li class="nav_list--contact"><a href="#">Contact</a></li>
     </ul>
   </nav>
+
+
   <article class="about">
     <h1>About</h1>
 
@@ -115,7 +126,11 @@
               java: 40%
             </span>
           </dd>
-         
+          <dd class="about_chart_percentage percentage-60 ">
+            <span class="about_chart_percentage--text ">
+              Metodyka BEM: 60%
+            </span>
+          </dd>
         </dl>
       </div>
 
