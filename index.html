@@ -16,25 +16,24 @@
 <body>
   <header class="header">
     <div class="header_contain">
-      <p>Witaj jestem <span>Rafał Łukasik</span></p><br>
+      <p>Witaj jestem</p>
+      <span>Rafał Łukasik</span><br />
       <p>Chciałbym zostać frontend developerem</p>
 
-      <button class='header_contain_button'>
+      <button class="header_contain_button">
         Moje projekty
-
       </button>
     </div>
   </header>
 
   <nav class="nav">
     <div class="nav_hamburger">
-        
       <span></span>
       <span></span>
       <span></span>
-  </div>
-      
-<!-- nav_list -->
+    </div>
+
+    <!-- nav_list -->
 
     <ul class="nav_list  js_nav">
       <li class="nav_list--home"><a href="#">Home</a></li>
@@ -44,41 +43,40 @@
     </ul>
   </nav>
 
-
   <article class="about">
     <h1>About</h1>
 
     <div class="about_grid-container">
       <div class="grid-container--html">
-        <img src="style/galeria/html-5.png">
+        <img src="style/galeria/html-5.png" />
         <div class="grid-container--text">html5</div>
       </div>
       <div class="grid-container--css">
-        <img src="style/galeria/css.png">
+        <img src="style/galeria/css.png" />
         <div class="grid-container--text">Css3</div>
       </div>
 
       <div class="grid-container--js">
-        <img src="style/galeria/js.png">
+        <img src="style/galeria/js.png" />
         <div class="grid-container--text">Js</div>
       </div>
       <div class="grid-container--bootstrap">
-        <img src="style/galeria/bootstrap.png">
+        <img src="style/galeria/bootstrap.png" />
         <div class="grid-container--text">bootstrap</div>
       </div>
-
     </div>
 
     <div class="about_content">
       <div class="about_content_description">
-        <img src="style//galeria/myphoto.jpg" alt="zdjecie">
+        <img src="style//galeria/myphoto.jpg" alt="zdjecie" />
         <h2>Kim jestem?</h2>
-        <p class="about_content_description--text">Mam na imię Rafał.<br>Jestem studentem Politechniki Lubelskiej.<br>
-          Studiuje Informatykę stacjonarnie.</p>
+        <p class="about_content_description--text">
+          Mam na imię Rafał.<br />Jestem studentem Politechniki Lubelskiej.<br />
+          Studiuje Informatykę stacjonarnie.
+        </p>
       </div>
 
       <div class="about_chart">
-
         <dl>
           <dt>Moje umiejętności</dt>
           <dd class="about_chart_percentage percentage-80">
@@ -133,9 +131,61 @@
           </dd>
         </dl>
       </div>
-
     </div>
+  </article>
 
+  <section class="projects">
+    <h2>Projekty</h2>
+    <div class="projects_content">
+      <div class="projects_content--1">
+        <img src="style/galeria/1.png" alt="projekt1" />
+
+        <div class="projects_content--all_about">
+          <h3>Moje portfolio nowe</h3>
+          <div class="projects_content--all_about_discription">html5 sass(scss) js bem</div>
+          <div class="projects_content--all_about_button"><a href="https://github.com/rafallukasik123/Potrfolionew-github.com"><button>Zobacz
+                więcej</button></a></div>
+
+
+        </div>
+      </div>
+      <div class="projects_content--2">
+        <img src="style/galeria/2.png" alt="projekt2" />
+
+        <div class="projects_content--all_about">
+          <h3>Zadanie psd</h3>
+          <div class="projects_content--all_about_discription">html5 css js jquery</div>
+          <div class="projects_content--all_about_button"><a href="https://github.com/rafallukasik123/challenge3-github.com"><button>Zobacz
+                więcej</button></a></div>
+        </div>
+      </div>
+      <div class="projects_content--3">
+        <img src="style/galeria/3.png" alt="projekt3" />
+
+        <div class="projects_content--all_about">
+          <h3>Moje portfolio stare</h3>
+          <div class="projects_content--all_about_discription">html5 css js</div>
+          <div class="projects_content--all_about_button"><a href="https://github.com/rafallukasik123/portfolio-github.com"><button>Zobacz
+                więcej</button></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <article class="contact">
+    <h2>Kontakt</h2>
+
+    <form class="form">
+
+      <p type="Imię:"><input placeholder="Napisz tutaj swoje imie.." required></input></p>
+      <p type="Email:"><input type="email" placeholder="Wpisz tu swój email.." required></input></p>
+      <p type="Wiadomość:"><input placeholder="Napisz tutaj swoją wiadomość.." required></input></p>
+      <button>Wyślij</button>
+      <div>
+        <span class="fa fa-phone"></span>725426726
+        <span class="fa fa-envelope-o"></span> Rafallukasik123@wp.pl
+      </div>
+    </form>
   </article>
 
 
