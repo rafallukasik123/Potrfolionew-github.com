@@ -9,24 +9,34 @@
   <meta name="description" content="Rafał Łukasik Portfolio" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/animate.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="jQuery-viewport-checker-master/src/jquery.viewportchecker.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header_contain">
+
+
+
+
+  <header class="header section" id="header">
+    <div class="header_contain" data-animate="zoomIn">
       <p>Witaj jestem</p>
       <span>Rafał Łukasik</span><br />
       <p>Chciałbym zostać frontend developerem</p>
 
-      <button class="header_contain_button">
-        Moje projekty
-      </button>
+      <a href="#projects" ><button class="header_contain_button">
+          Moje projekty
+        </button></a>
     </div>
   </header>
 
-  <nav class="nav">
+  <nav class="nav" data-animate="bounceInRight">
     <div class="nav_hamburger">
       <span></span>
       <span></span>
@@ -36,17 +46,18 @@
     <!-- nav_list -->
 
     <ul class="nav_list  js_nav">
-      <li class="nav_list--home"><a href="#">Home</a></li>
-      <li class="nav_list--about"><a href="#">About</a></li>
-      <li class="nav_list--news"><a href="#">Projects</a></li>
-      <li class="nav_list--contact"><a href="#">Contact</a></li>
+      <li class="nav_list--home"><a href="#header">Home</a></li>
+      <li class="nav_list--about"><a href="#about">About</a></li>
+      <li class="nav_list--projects"><a href="#projects">Projects</a></li>
+      <li class="nav_list--contact"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <article class="about">
+ 
+  <article class="about section"  id="about"  >
     <h1>About</h1>
 
-    <div class="about_grid-container">
+    <div class="about_grid-container" data-animate="bounceInUp">
       <div class="grid-container--html">
         <img src="style/galeria/html-5.png" />
         <div class="grid-container--text">html5</div>
@@ -66,8 +77,8 @@
       </div>
     </div>
 
-    <div class="about_content">
-      <div class="about_content_description">
+    <div class="about_content" >
+      <div class="about_content_description" data-animate="bounceInLeft">
         <img src="style//galeria/myphoto.jpg" alt="zdjecie" />
         <h2>Kim jestem?</h2>
         <p class="about_content_description--text">
@@ -76,7 +87,7 @@
         </p>
       </div>
 
-      <div class="about_chart">
+      <div class="about_chart" data-animate="bounceInRight">
         <dl>
           <dt>Moje umiejętności</dt>
           <dd class="about_chart_percentage percentage-80">
@@ -134,9 +145,9 @@
     </div>
   </article>
 
-  <section class="projects">
-    <h2>Projekty</h2>
-    <div class="projects_content">
+  <section class="projects section" id="projects">
+    <h2 data-animate="bounceInRight">Projekty</h2>
+    <div class="projects_content" data-animate="bounceInLeft">
       <div class="projects_content--1">
         <img src="style/galeria/1.png" alt="projekt1" />
 
@@ -172,10 +183,10 @@
     </div>
   </section>
 
-  <article class="contact">
-    <h2>Kontakt</h2>
+  <article class="contact section" id="contact" >
+    <h2 data-animate="lightSpeedIn">Kontakt</h2>
 
-    <form class="form">
+    <form class="form" data-animate="lightSpeedIn">
 
       <p type="Imię:"><input placeholder="Napisz tutaj swoje imie.." required></input></p>
       <p type="Email:"><input type="email" placeholder="Wpisz tu swój email.." required></input></p>
@@ -187,9 +198,33 @@
       </div>
     </form>
   </article>
+  <footer class="footer section">
+    <i class="fas fa-angle-double-up icon_main fa-3x"></i>
+
+    <div class="footer_flex">
+      <div class="footer_flex_icons" data-animate="slideInUp">
+
+        <div class="footer_flex_icons--github"> <a href="https://github.com/rafallukasik123"><img src="style/galeria/iconfinder_logo-github_298818.png"></a></div>
+        <div class="footer_flex_icons--facebook"><a href="https://www.facebook.com/profile.php?id=100003199183621"><img
+              src="style/galeria/iconfinder_social_media_applications_1-facebook_4102573.png"></a></div>
+        <div class="footer_flex_icons--linkedin"><a href="https://www.linkedin.com/in/rafa%C5%82-%C5%82ukasik-4bb847179/"><img
+              src="style/galeria/iconfinder_social_media_applications_14-linkedin_4102586.png"></a></div>
+
+
+      </div>
+      <h5>Rafał Łukasik <span>&#169; 2019</span></h5>
+
+    </div>
+
+
+  </footer>
 
 
   <script src="function.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="jQuery-viewport-checker-master/src/jquery.viewportchecker.js"></script>
+
+
 </body>
 
 </html>
